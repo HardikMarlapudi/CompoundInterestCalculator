@@ -1,0 +1,93 @@
+.calculator {
+    border: 0.5rem solid;
+    border-radius: 2px;
+    padding-block: 0.5rem;
+}
+
+#title {
+    text-align: center;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#formula {
+    text-align: center;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#principal {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#principalInput {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#response {
+    text-align: center;
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#rate {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#compound {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#time {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#clear {
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(241, 6, 6);
+    color: white;
+    cursor: pointer;
+}
+
+#calculate {
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(8, 218, 8);
+    text-align: right;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons {
+    text-align: center;
+}
+
+#answer {
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}

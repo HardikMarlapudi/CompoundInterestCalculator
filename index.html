@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Compound Interest Calculator</title>
+</head>
+<body>
+
+    <div class="calculator">
+    <h2 id="title">Compound Interest Calculator</h2>
+
+    <p id="formula">A=P(1 + r/n)^nt</p>
+
+    <p id="principal">Principal(P): $</p>
+    <center><input type="text" id="principalInput" placeholder="Principal(P)"></center>
+
+    <p id="rate">Rate (R): %</p>
+    <center><input type="text" id="rate" placeholder="Rate(R)"></center>
+
+    <p id="compound">Compound (n):</p>
+    <center><input type="text" id="compound" placeholder="Compound(n)"></center>
+
+    <p id="time">Time (t in years):</p>
+    <center><input type="text" id="time" placeholder="time(t)"><br></center>
+
+    <center><p id="answer"></p></center><br>
+
+    <div class="buttons">
+    <button id="clear" onclick="clear()">Clear</button>
+    <button id="calculate" onclick="calculate()">Calculate</button>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
