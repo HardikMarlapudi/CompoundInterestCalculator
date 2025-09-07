@@ -1,36 +1,30 @@
-let principal = document.getElementById("principal").textContent;
-let rate = document.getElementById("rate").textContent;
-let compound = document.getElementById("compound").textContent;
-let time = document.getElementById("time").textContent;
+let principal = document.getElementById("principalInput").textContent;
+let rate = document.getElementById("rateInput").textContent;
+let compound = document.getElementById("compoundInput").textContent;
+let time = document.getElementById("timeInput").textContent;
 
 function calculate() {
-
-    if(principal == "") {
-        alert("Please enter a valid number");
+    if(document.getElementById("principalInput").textContent == "") {
+        alert("Please enter a valid number!!!");
         return;
-    } else if (principal <= 0 && "") {
-        alert("Please enter a valid number");
+    } else if (document.getElementById("rateInput").textContent == "") {
+        alert("Please enter a valid number!!!");
         return;
-    } else if (rate <= 0 && "") {
-        alert("Pleae enter a valid number");
+    } else if (document.getElementById("compoundInput").textContent == "") {
+        alert("Please enter a valid number!!!");
         return;
-    } else if (compound <= 0 && "") {
-        alert("Please enter a valid number");
-        return;
-    } else if (time <= 0 && "") {
-        alert("Please enter a valid number");
+    } else if (document.getElementById("timeInput").textContent == "") {
+        alert("Please enter a valid number!!!");
         return;
     } else {
-        document.getElementById("principal").textContent = principal;
-        document.getElementById("rate").textContent = rate;
-        document.getElementById("compound").textContent = compound;
-        document.getElementById("time").textContent = time;
+        document.getElementById("result").innerHTML = principal * Math.pow((1 + (rate/compound)), (compound * time));
+        return;
     }
  }
 
 function reset() {
-    document.getElementById("principal").textContent = "";
-    document.getElementById("rate").textContent = "";
-    document.getElementById("compound").textContent = "";
-    document.getElementById("time").textContent = "";
+    document.getElementById("principalInput").textContent == "";
+    document.getElementById("rateInput").textContent == "";
+    document.getElementById("compoundInput").textContent == "";
+    document.getElementById("timeInput").textContent == "";
 }
