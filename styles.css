@@ -91,7 +91,6 @@
 }
 
 #clear {
-    font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
     border: none;
     border-radius: 0.5rem;
@@ -101,7 +100,6 @@
 }
 
 #calculate {
-    font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
     border: none;
     border-radius: 0.5rem;

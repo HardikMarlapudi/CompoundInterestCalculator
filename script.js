@@ -1,30 +1,29 @@
-let principal = document.getElementById("principalInput").textContent;
-let rate = document.getElementById("rateInput").textContent;
-let compound = document.getElementById("compoundInput").textContent;
-let time = document.getElementById("timeInput").textContent;
+let principal = document.getElementById("principalInput");
+let rate = document.getElementById("rateInput");
+let compound = document.getElementById("compoundInput");
+let time = document.getElementById("timeInput");
+let answer = document.getElementById("answer");
 
 function calculate() {
-    if(document.getElementById("principalInput").textContent == "") {
-        alert("Please enter a valid number!!!");
-        return;
-    } else if (document.getElementById("rateInput").textContent == "") {
-        alert("Please enter a valid number!!!");
-        return;
-    } else if (document.getElementById("compoundInput").textContent == "") {
-        alert("Please enter a valid number!!!");
-        return;
-    } else if (document.getElementById("timeInput").textContent == "") {
-        alert("Please enter a valid number!!!");
+    let principal = parseFloat(document.getElementById("principalInput").value);
+    let rate = parseFloat(document.getElementById("rateInput").value);
+    let compound = parseFloat(document.getElementById("compoundInput").value);
+    let time = parseFloat(document.getElementById("timeInput").value);
+
+    if(isNaN(principal) || isNaN(rate) || isNaN(compound) || isNaN(time)) {
+        alert("Please enter valid numbers for all input boxes.");
         return;
     } else {
-        document.getElementById("result").innerHTML = principal * Math.pow((1 + (rate/compound)), (compound * time));
+        let answer = principal * Math.pow((1 + (rate / compound)), (compound * time));
+        document.getElementById("answer").innerHTML = `The total is ${answer}`;
         return;
     }
- }
+}
 
 function reset() {
-    document.getElementById("principalInput").textContent == "";
-    document.getElementById("rateInput").textContent == "";
-    document.getElementById("compoundInput").textContent == "";
-    document.getElementById("timeInput").textContent == "";
+    document.getElementById("principalInput").value = "";
+    document.getElementById("rateInput").value = "";
+    document.getElementById("compoundInput").value = "";
+    document.getElementById("timeInput").value = "";
+    document.getElementById("answer").innerHTML = "";
 }
