@@ -32,7 +32,7 @@ function calculate() {
 
 // Functionality triggered when the "Reset" button is clicked
 function reset() {
-    // Clear all input fields
+    // Clears all input Fields
     document.getElementById("principalInput").value = "";
     document.getElementById("rateInput").value = "";
     document.getElementById("compoundInput").value = "";
